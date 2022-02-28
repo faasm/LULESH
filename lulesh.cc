@@ -2709,6 +2709,7 @@ int main(int argc, char *argv[])
    if ((myRank == 0) && (opts.quiet == 0)) {
       std::cout << "Running problem size " << opts.nx << "^3 per domain until completion\n";
       std::cout << "Num processors: "      << numRanks << "\n";
+      std::cout << "Num iterations: "      << opts.its << "\n";
 #if _OPENMP
       std::cout << "Num threads: " << omp_get_max_threads() << "\n";
 #endif
